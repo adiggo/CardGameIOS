@@ -10,19 +10,31 @@
 
 @interface ViewController ()
             
+@property (weak, nonatomic) IBOutlet UILabel *flipLabel;
+@property (nonatomic)int flipCount;
 
 @end
 
 @implementation ViewController
-            
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void) setFlipCount:(int)flipCount
+{
+    _flipCount = flipCount;
+    self.flipLabel.text = [NSString stringWithFormat:@"flip :%d",self.flipCount];
+    NSLog(@"flipCount = %d", self.flipCount);
+}
+            
+- (IBAction)cardReverse:(UIButton*)sender {
+    if ([sender.currentTitle length]){
+        UIImage *cardImage = [UIImage imageNamed:@"cardback"];
+        [sender setBackgroundImage:cardImage forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }else{
+        UIImage *cardImage = [UIImage imageNamed:@"cardfront"];  //default is use normal state
+        [sender setBackgroundImage:cardImage forState:UIControlStateNormal];
+        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+    }
+    self.flipCount++;
 }
 
 @end

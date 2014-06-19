@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4517A2FA19513F9000E7735C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 4517A2F919513F9000E7735C /* Card.m */; };
+		4517A2FE195148DA00E7735C /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4517A2FD195148D900E7735C /* Deck.m */; };
+		4517A3041952312E00E7735C /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4517A3031952312E00E7735C /* PlayingCard.m */; };
 		45DA01D51950DABD00BADF28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DA01D41950DABD00BADF28 /* main.m */; };
 		45DA01D81950DABD00BADF28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DA01D71950DABD00BADF28 /* AppDelegate.m */; };
 		45DA01DB1950DABD00BADF28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DA01DA1950DABD00BADF28 /* ViewController.m */; };
@@ -26,6 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4517A2F819513F8F00E7735C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		4517A2F919513F9000E7735C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		4517A2FC195148D900E7735C /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
+		4517A2FD195148D900E7735C /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
+		4517A3021952312E00E7735C /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
+		4517A3031952312E00E7735C /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 		45DA01CF1950DABD00BADF28 /* Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DA01D31950DABD00BADF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45DA01D41950DABD00BADF28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +67,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4517A2FB19513F9F00E7735C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4517A2F919513F9000E7735C /* Card.m */,
+				4517A3021952312E00E7735C /* PlayingCard.h */,
+				4517A3031952312E00E7735C /* PlayingCard.m */,
+				4517A2FC195148D900E7735C /* Deck.h */,
+				4517A2FD195148D900E7735C /* Deck.m */,
+				4517A2F819513F8F00E7735C /* Card.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		45DA01C61950DABD00BADF28 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +106,7 @@
 				45DA01D91950DABD00BADF28 /* ViewController.h */,
 				45DA01DA1950DABD00BADF28 /* ViewController.m */,
 				45DA01DC1950DABD00BADF28 /* Main.storyboard */,
+				4517A2FB19513F9F00E7735C /* Model */,
 				45DA01DF1950DABD00BADF28 /* Images.xcassets */,
 				45DA01D21950DABD00BADF28 /* Supporting Files */,
 			);
@@ -215,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4517A3041952312E00E7735C /* PlayingCard.m in Sources */,
+				4517A2FE195148DA00E7735C /* Deck.m in Sources */,
 				45DA01DB1950DABD00BADF28 /* ViewController.m in Sources */,
 				45DA01D81950DABD00BADF28 /* AppDelegate.m in Sources */,
 				45DA01D51950DABD00BADF28 /* main.m in Sources */,
+				4517A2FA19513F9000E7735C /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +430,7 @@
 				45DA01F11950DABD00BADF28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45DA01F21950DABD00BADF28 /* Build configuration list for PBXNativeTarget "CardTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +439,7 @@
 				45DA01F41950DABD00BADF28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
