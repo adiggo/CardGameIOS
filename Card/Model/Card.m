@@ -15,6 +15,9 @@
 
 @implementation Card
 
+
+// match is used for test is there any cards in othercards is equal to this card.
+
 - (int)match:(NSArray *)othercards
 {
     int score = 0;

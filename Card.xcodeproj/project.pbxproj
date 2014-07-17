@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4503C6091957E170002AEA78 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4503C6081957E170002AEA78 /* CardMatchingGame.m */; };
 		4517A2FA19513F9000E7735C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 4517A2F919513F9000E7735C /* Card.m */; };
 		4517A2FE195148DA00E7735C /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4517A2FD195148D900E7735C /* Deck.m */; };
 		4517A3041952312E00E7735C /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4517A3031952312E00E7735C /* PlayingCard.m */; };
+		4517A3071952853000E7735C /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4517A3061952853000E7735C /* PlayingCardDeck.m */; };
 		45DA01D51950DABD00BADF28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DA01D41950DABD00BADF28 /* main.m */; };
 		45DA01D81950DABD00BADF28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DA01D71950DABD00BADF28 /* AppDelegate.m */; };
 		45DA01DB1950DABD00BADF28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DA01DA1950DABD00BADF28 /* ViewController.m */; };
@@ -29,12 +31,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4503C6071957E16F002AEA78 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
+		4503C6081957E170002AEA78 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 		4517A2F819513F8F00E7735C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		4517A2F919513F9000E7735C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		4517A2FC195148D900E7735C /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
 		4517A2FD195148D900E7735C /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
 		4517A3021952312E00E7735C /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
 		4517A3031952312E00E7735C /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
+		4517A3051952853000E7735C /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		4517A3061952853000E7735C /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		45DA01CF1950DABD00BADF28 /* Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DA01D31950DABD00BADF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45DA01D41950DABD00BADF28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,10 +76,14 @@
 		4517A2FB19513F9F00E7735C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4503C6071957E16F002AEA78 /* CardMatchingGame.h */,
+				4503C6081957E170002AEA78 /* CardMatchingGame.m */,
 				4517A2F919513F9000E7735C /* Card.m */,
 				4517A3021952312E00E7735C /* PlayingCard.h */,
 				4517A3031952312E00E7735C /* PlayingCard.m */,
 				4517A2FC195148D900E7735C /* Deck.h */,
+				4517A3051952853000E7735C /* PlayingCardDeck.h */,
+				4517A3061952853000E7735C /* PlayingCardDeck.m */,
 				4517A2FD195148D900E7735C /* Deck.m */,
 				4517A2F819513F8F00E7735C /* Card.h */,
 			);
@@ -242,6 +252,8 @@
 				4517A2FE195148DA00E7735C /* Deck.m in Sources */,
 				45DA01DB1950DABD00BADF28 /* ViewController.m in Sources */,
 				45DA01D81950DABD00BADF28 /* AppDelegate.m in Sources */,
+				4503C6091957E170002AEA78 /* CardMatchingGame.m in Sources */,
+				4517A3071952853000E7735C /* PlayingCardDeck.m in Sources */,
 				45DA01D51950DABD00BADF28 /* main.m in Sources */,
 				4517A2FA19513F9000E7735C /* Card.m in Sources */,
 			);
@@ -358,9 +370,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Card/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Card/Card-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -369,9 +384,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Card/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Card/Card-Bridging-Header.h";
 			};
 			name = Release;
 		};
