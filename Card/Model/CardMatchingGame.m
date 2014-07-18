@@ -50,6 +50,7 @@
 
 - (Card *) cardAtIndex:(NSUInteger)index
 {
+    //protect the cards
     return (index < [self.cards count]) ? self.cards[index] : nil;
 }
 
@@ -61,12 +62,13 @@ static const int COST_TO_CHOOSE = 1;
 //choose action, if you click choose the card, then it will be choosed if it has not been chosen before
 - (void) chooseCardAtIndex:(NSUInteger)index
 {
-    Card *card = [self cardAtIndex:index];
+    Card *card = [self cardAtIndex:index]; //choose a new card
     if (!card.isMatched){
         if (card.isChosen){
             card.chosen = NO;
         }else{
             for (Card *otherCard in self.cards){
+              //if othercard is chosen, and it is not matched.
                 if (otherCard.isChosen && !otherCard.isMatched){
                     int matchScore = [card match : @[otherCard ]];
                     if (matchScore){
