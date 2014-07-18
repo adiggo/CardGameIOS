@@ -67,10 +67,15 @@ static const int COST_TO_CHOOSE = 1;
         if (card.isChosen){
             card.chosen = NO;
         }else{
+            
+            
+            //find whether there is match for the chosen card
             for (Card *otherCard in self.cards){
               //if othercard is chosen, and it is not matched.
+              // so the logic is clear, we need to compare the chosen card
+              // with other card already chosen before, and make sure they are not chosen.
                 if (otherCard.isChosen && !otherCard.isMatched){
-                    int matchScore = [card match : @[otherCard ]];
+                    int matchScore = [card match : @[otherCard]];
                     if (matchScore){
                         self.score += matchScore * MATCH_BONUS;
                         otherCard.matched = YES;

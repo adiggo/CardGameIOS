@@ -1,1 +1,5 @@
 A card game based on IOS
+
+Cocos 2d vs Sprite Kit:
+can be used in other platform; can write openGl effects code; open source.
+not built in xcode.
